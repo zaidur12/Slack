@@ -1,5 +1,6 @@
 import express from "express"
 import { ENV } from "../src/config/env.js"
+import { connectDB } from "./config/db.js";
 
 const app = express();
 
@@ -10,6 +11,6 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(ENV.PORT, ()=>{
-    console.log(ENV.MONGO_URI)
     console.log("Server is running",ENV.PORT)
+    connectDB()
 })

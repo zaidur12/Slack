@@ -4,14 +4,16 @@
   "description": "",
   "main": "src/server.js",
   "scripts": {
-    "dev":"node --watch src/server.js",
-    "start":"node src/server.js"
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@clerk/express": "^2.1.27",
+    "@sentry/node": "^10.58.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
