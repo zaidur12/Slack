@@ -2,6 +2,8 @@ import express from "express"
 import { ENV } from "../src/config/env.js"
 import { connectDB } from "./config/db.js";
 import { clerkMiddleware } from '@clerk/express'
+import { functions, inngest } from "./config/inngest.js";
+import { serve } from "inngest/express";
 const app = express();
 
 
